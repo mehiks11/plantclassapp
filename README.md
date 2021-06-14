@@ -41,7 +41,7 @@ The dataset contains 2273 images of 11 different plant types. Specifically, the 
 11. Arjun Plant
 
 ## Algorithms
-Algorithsm used included building upon a VGG16 convolutional network, leveraging models built on imagenet. A model with 6 dense hidden layers plus an output softmax layer was added. Several models were experimented with, as can be followed in the [model modification notebook] ().
+Algorithsm used included building upon a VGG16 convolutional network, leveraging models built on imagenet. A model with 6 dense hidden layers plus an output softmax layer was added. Several models were experimented with, as can be followed in the [model modification notebook] (https://github.com/mehiks11/Plant_ID/blob/master/Code/Modeling%20-%20Baseline%20Model%20%2B%20Modifications%20(1).ipynb).
 
 *Model Evaluation and Selection*
   
