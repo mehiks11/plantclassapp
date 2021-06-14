@@ -9,13 +9,7 @@ import tensorflow as tf
 from keras.applications.vgg16 import VGG16
 from keras.preprocessing.image import ImageDataGenerator
 
-##Theme
-# [theme]
-primaryColor="#bcc986"
-backgroundColor="#9de8cc"
-secondaryBackgroundColor="#dca9d8"
-textColor="#001af9"
-font="monospace"
+
 
 conv_base = VGG16(weights='imagenet',
                   include_top=False)
@@ -78,7 +72,7 @@ def teachable_machine_classification(img_dir):
 #####
 
 
-cover_image = Image.open("/Users/mehikapatel/Plant_NN_Project/Images/pomegranate.jpg")
+cover_image = Image.open("/Users/mehikapatel/Plant_NN_Project/Images/cover_img.jpg")
 jatophra = Image.open("/Users/mehikapatel/Plant_NN_Project/Images/jatophra.jpg")
 pon = Image.open("/Users/mehikapatel/Plant_NN_Project/Images/pongamia.jpg")
 pom = Image.open("/Users/mehikapatel/Plant_NN_Project/Images/pomegranate.jpg")
@@ -91,24 +85,56 @@ basil = Image.open("/Users/mehikapatel/Plant_NN_Project/Images/basil.jpg")
 jamun = Image.open("/Users/mehikapatel/Plant_NN_Project/Images/jamun.jpg")
 arjun = Image.open("/Users/mehikapatel/Plant_NN_Project/Images/arjun.jpg")
 
-st.title("Plant Classifier")
-st.image(cover_image,width=200)
+
+
+
+
+# st.title("Plant Classifier")
+st.image(cover_image,width=700)
 
 st.header("Guess this Plant!")
 st.subheader("About This App:")
 st.markdown("Hello world. I am an app that is built upon a neural network model trained to classify 11 different plants by an image of a plant leaf! I have the ability to classify the following plant types with 93 percent accuracy. ")
-st.markdown("* Jatophra")
-st.markdown("* Pongamia Pinnata") 
-st.markdown("* Pomegranate") 
-st.markdown("* Mango") 
-st.markdown("* Alstonia Scholaris") 
-st.markdown("* Chinar ") 
-st.markdown("* Lemon") 
-st.markdown("* Guava") 
-st.markdown("* Basil") 
-st.markdown("* Jamun") 
-st.markdown("* Arjun Plant") 
-st.markdown("Follow the directions below to test me!")
+
+col1,col2,col3 = st.beta_columns(3)
+
+with col1:
+    st.markdown("* Jatophra")
+    st.image(jatophra,width=200)
+with col2:
+    st.markdown("* Pongamia Pinnata")
+    st.image(pon,width=200) 
+with col3:
+    st.markdown("* Pomegranate")
+    st.image(pom,width=200) 
+with col1:
+    st.markdown("* Mango")
+    st.image(mango,width=200) 
+with col2:
+    st.markdown("* Alstonia Scholaris")
+    st.image(alstonia,width=200) 
+with col3:
+    st.markdown("* Chinar")
+    st.image(chinar,width=150) 
+with col1:
+    st.markdown("* Lemon")
+    st.image(lemon,width=200) 
+with col2:
+    st.markdown("* Guava")
+    st.image(guava,width=200) 
+
+with col3:
+    st.markdown("* Basil")
+    st.image(basil,width=200) 
+with col1:
+    st.markdown("* Jamun")
+    st.image(jamun,width=200) 
+with col2:
+    st.markdown("* Arjun Plant")
+    st.image(arjun,width=200) 
+
+
+st.markdown("**Follow the directions below to test me!**")
 st.text("Upload an image of a plant leaf you suspect might be one of the 11 plants above. ")
 
 
