@@ -4,7 +4,10 @@
 The goal of this project was to create a neural network model to classify the type of plant with an image of a plant leaf. 11 different plant types are compatible with the final model. The data was provided by [Mendeley Data](https://data.mendeley.com/datasets/hb74ynkjcn/1). 
 I leveraged the power of neural networks and keras image generator to train and build a model with an iterative validation scheme to improve the model to a .93 accuracy for final test scores. There is a steramlit app that streamlines this classification model onto an interactive interface. Once the model identifies the plant leaf, it provides some basic information about that plant!
 **This model is deployed through a user friendly application that allows the user to upload their own image of a leaf to have it classified!**
-![App](Images/plantappmov.mp4)
+
+
+https://user-images.githubusercontent.com/77343298/121833514-8860b080-cc9a-11eb-9eb6-19f3e6375c84.mp4
+
 
 ## Design
 This project is based in basic image classification project design built to use the power of neural networks to learn image processing networks and to classify specific plant leaves by plant type. The data is provided by [Mendeley Data](https://data.mendeley.com/datasets/hb74ynkjcn/1). Classifying plant leaves accurately with machine learning models can enable one to identify a plant type. This prototype model can be built upon to include various more plants. Plant identification is vital in promoting environmental interest among the population and in producing an educational beginning to plant owners. 
